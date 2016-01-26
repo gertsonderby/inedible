@@ -1,0 +1,25 @@
+<html>
+<head>
+    <style>
+        .rte-active-field {
+            width: 600px;
+            height: 400px;
+            border: 1px solid gray;
+            padding: 5px;
+        }
+        *:focus { outline: 1px red; }
+    </style>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="rte.js"></script>
+    <script>
+        var editor;
+        $(document).ready(function () {
+            editor = RTE.create('testeditor');
+        });
+        </script>
+</head>
+<body>
+    <h1>Test of RTE</h1>
+    <div class="rte-active-field" id="testeditor"><p>This is test content.</p><p><b>Don't</b> worry about <i>changing</i> it, or anything.</p><p>This is a paragraph with quite a lot of text. It is mainly here so we can test multiline paragraphs and see that moving up and down can work. Don't mind what this text actually says, it's quite meaningless chatter.</p></div>
+</body>
+</html>

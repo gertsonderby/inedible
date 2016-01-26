@@ -1,0 +1,9 @@
+{
+    "name": "new-rte",
+    "version": "0.1.0",
+    "devDependencies": {
+        "serve": "*",
+        "knockout": "3",
+        "jquery": ">=1.11"
+    }
+}
